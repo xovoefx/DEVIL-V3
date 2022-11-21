@@ -1,23 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
-
 then
-
   echo "Cloning main Repository"
-
-  git clone https://github.com/xovoefx/DEVIL-V3 /jack ma
-
-else
-
+  git clone https://github.c9m/xovoefx/DEVIL-V3/jack ma
+else 
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-
-  git clone $UPSTREAM_REPO /EvaMaria
-
+  git clone $UPSTREAM_REPO /DEVIL-V3
 fi
-
 cd /Jack Ma
-
-pip3 install -U -r requirements.txt
-
+pip3 install -U -r requiements.txt
 echo "Starting Bot...."
-
 python3 bot.py
